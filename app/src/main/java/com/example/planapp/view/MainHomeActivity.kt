@@ -3,7 +3,10 @@ package com.example.planapp.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.ItemTouchHelper
+import androidx.recyclerview.widget.RecyclerView
 import com.example.planapp.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -28,6 +31,8 @@ class MainHomeActivity : AppCompatActivity() {
                     FragmentHome()
             ).commit()
         }
+
+
     }
     private val navListener =
             BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -39,7 +44,7 @@ class MainHomeActivity : AppCompatActivity() {
                 supportFragmentManager.beginTransaction().replace(
                         R.id.fragment_container,
                         selectedFragment!!
-                ).addToBackStack(null).commit()
+                ).commit()
                 true
             }
 }
