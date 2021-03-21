@@ -26,7 +26,8 @@ class MemberPrinceActivity: AppCompatActivity() {
 
         addNewMember.setOnClickListener {
             Log.i("toquei", "uhuulll")
-            CustomInputDialog(this, inflater, R.id.input, "Novo membro",   listInput)
+            val customInput = CustomInputDialog()
+            customInput.getDialogAttributes(this, inflater, R.id.input, "Novo membro",   listInput)
         }
         calculate_total.setOnClickListener {
             val intent: Intent = Intent(this, TotalQuotationActivity::class.java)

@@ -29,7 +29,6 @@ class MainHomeActivity : AppCompatActivity() {
             ).commit()
         }
     }
-
     private val navListener =
             BottomNavigationView.OnNavigationItemSelectedListener { item ->
                 var selectedFragment: Fragment? = null
@@ -40,7 +39,7 @@ class MainHomeActivity : AppCompatActivity() {
                 supportFragmentManager.beginTransaction().replace(
                         R.id.fragment_container,
                         selectedFragment!!
-                ).commit()
+                ).addToBackStack(null).commit()
                 true
             }
 }

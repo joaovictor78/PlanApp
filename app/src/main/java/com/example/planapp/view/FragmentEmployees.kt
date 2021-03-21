@@ -22,7 +22,8 @@ class FragmentEmployees: Fragment() {
         val inflater: LayoutInflater = requireActivity().layoutInflater
         val listInput: MutableList<CustomInputData> = mutableListOf(CustomInputData("Informe o nome", R.drawable.ic_people),CustomInputData("Informe o telefone", R.drawable.ic_phone), CustomInputData("Informe o email", R.drawable.ic_email))
         fabNewEmployees.setOnClickListener {
-            var customInputDialog = CustomInputDialog(view.context, inflater, R.id.input, "Cadastrar Funcionario",   listInput)
+            var customInputDialog = CustomInputDialog()
+            customInputDialog.getDialogAttributes(view.context, inflater, R.id.input, "Cadastrar Funcionario",   listInput)
         }
         return view
     }

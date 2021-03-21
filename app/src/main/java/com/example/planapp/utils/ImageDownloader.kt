@@ -29,7 +29,7 @@ object ImageDownloader {
             val roundedBitmap: RoundedBitmapDrawable = roundedBitmapImage(image, it, arroundBorder)
             image.setImageDrawable(roundedBitmap)
         } ?: kotlin.run{
-            Thread {
+         Thread {
                 val connection: HttpURLConnection = URL(url).openConnection() as HttpURLConnection
                 try {
                     val responseCode = connection.responseCode
@@ -42,6 +42,7 @@ object ImageDownloader {
                     }
                 } catch (e: Exception) {
                     e.printStackTrace()
+                    connection.disconnect()
                 }
             }.start()
         }

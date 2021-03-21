@@ -44,8 +44,14 @@ class HomeAdapter(private var brokers: MutableList<BrokerData> = mutableListOf()
         }
 
         fun bind(broker: BrokerData){
-           name?.setText(broker.name.toString())
-           ImageDownloader.download(fileImg!!, "https://cdn6.aptoide.com/imgs/0/6/c/06c70ab049aa826ece96236f69c78144_icon.png", 14)
+            with(itemView){
+                name?.setText(broker.name.toString())
+
+                    ImageDownloader.download(fileImg!!, "https://stc.ofuxico.com.br/img/upload/noticias/2020/11/18/bob-epsonja-pulando-em-frenye-a-sua-casa-esbanjando-felicidade_390112_36.jpg", 14)
+
+
+            }
+
         }
     }
 }

@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.MemberPrinceActivity">
-
+   <androidx.appcompat.widget.Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lista_cotacao"
         android:layout_width="match_parent"
@@ -35,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
+            android:textColor="@color/white"
             android:background="@drawable/custom_border_arround"
             android:text="ADICIONAR"
             android:textSize="15sp"
@@ -47,6 +50,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/custom_border_arround"
+            android:textColor="@color/white"
             android:text="CALCULAR"
             android:textSize="15sp"
             app:backgroundTint="#FB8500" />
