@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="view.AddApoiment">
+    tools:context="view.AddAppointmentActivity">
 
     <EditText
         android:id="@+id/input_assunto"
@@ -12,8 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@drawable/custom_input"
+        android:padding = "10dp"
+        android:background="@drawable/main_custom_input"
         android:hint="Digite o assunto"
+        android:fontFamily="@font/notoserif"
         android:textColor="#090000"
         android:textColorHint="#99190000"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,16 +29,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="84dp"
-        android:backgroundTint="@drawable/custom_input"
+        android:padding = "10dp"
+        android:background="@drawable/main_custom_input"
+        android:fontFamily="@font/notoserif"
         android:hint="Digite uma data"
         android:inputType="date"
         android:maxLength="10"
         android:textColor="#090000"
+        android:layout_marginVertical="14dp"
         android:textColorHint="#99190000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/input_assunto">
 
     </EditText>
 
@@ -45,8 +49,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="148dp"
-        android:backgroundTint="@drawable/custom_input"
+        android:layout_marginVertical="14dp"
+        android:padding = "10dp"
+        android:background="@drawable/main_custom_input"
+        android:fontFamily="@font/notoserif"
         android:hint="Digite um horario"
         android:maxLength="5"
         android:textColor="#090000"
@@ -54,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/input_data">
 
     </EditText>
 
@@ -63,15 +69,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="216dp"
-        android:backgroundTint="@drawable/custom_input"
+        android:background="@drawable/main_custom_input"
+        android:fontFamily="@font/notoserif"
         android:hint="Digite uma descrição"
+        android:layout_marginVertical="10dp"
+        android:padding = "10dp"
         android:textColor="#090000"
         android:textColorHint="#99190000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/input_horario">
 
     </EditText>
 
@@ -80,9 +88,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="80dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/custom_border_arround"
         android:text="ADICIONAR"
+        android:textColor="@color/white"
         app:backgroundTint="#FB8500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -3,7 +3,6 @@
     <style name="Theme.PlanApp" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/ciano_480</item>
-        <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/orange_pure</item>
@@ -11,6 +10,7 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Customize your theme here. -->
         <item name="android:colorBackground">@color/white</item>
-        <item name="colorSurface">@color/ciano_480</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/light_gray</item>
     </style>
 </resources>

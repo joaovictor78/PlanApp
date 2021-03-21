@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/db1_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -37,20 +38,31 @@
         android:orientation="vertical" >
 
         <Button
-            android:id="@+id/enter_button"
+            android:id="@+id/entrar_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:layout_gravity="center_horizontal|center"
-            android:text="Entrar" />
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/white"
+            android:layout_marginBottom="10dp"
+            android:elevation="0dp"
+            android:fontFamily="@font/roboto"
+            android:background="@drawable/custom_border_gradient"
+            android:text="Entrar"
+            android:layout_marginHorizontal="40dp"/>
 
         <Button
-            android:id="@+id/register_button"
+            android:id="@+id/cadastrar_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:layout_gravity="center_horizontal|center"
-            android:text="Cadastrar" />
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:elevation="0dp"
+            android:fontFamily="@font/roboto"
+            android:background="@drawable/custom_border_gradient"
+            android:text="Cadastrar"
+            android:layout_marginHorizontal="40dp"/>
 
     </LinearLayout>
 

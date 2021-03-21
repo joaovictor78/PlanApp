@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         actionBar?.hide()
-        val enterButton: Button = findViewById<Button>(R.id.enter_button)
-        val registerButton: Button = findViewById<Button>(R.id.register_button)
+        val enterButton: Button = findViewById<Button>(R.id.entrar_button)
+        val registerButton: Button = findViewById<Button>(R.id.cadastrar_button)
         val sloganMain: TextView = findViewById<TextView>(R.id.slogan_main)
 
         val sloganText: String = "O melhor app\n para corretores de saúde !"
